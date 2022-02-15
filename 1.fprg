@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ADMIN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-17 09:35:26 AM"/>
+        <attribute name="created" value="QURNSU47QURNSU4tUEM7MjAyMS0xMi0xNjswMToxOToyMSBQTTsyMTg3"/>
+        <attribute name="edited" value="QURNSU47QURNSU4tUEM7MjAyMS0xMi0xNjswMjozNzo0OCBQTTszOzIzMDc="/>
+        <attribute name="edited" value="amFpYWQ7SkFJQURJVFlBTjsyMDIxLTEyLTE3OzA5OjM1OjI2IEFNOzE7MjYxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="k, n, j" type="Integer" array="False" size=""/>
+            <declare name="list" type="Integer" array="True" size="10"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <input variable="list[i]"/>
+            </for>
+            <declare name="occurences" type="Integer" array="True" size="10"/>
+            <for variable="k" start="0" end="9" direction="inc" step="1">
+                <assign variable="occurences[k]" expression="1"/>
+            </for>
+            <for variable="k" start="0" end="9" direction="inc" step="1">
+                <assign variable="n" expression="list[k]"/>
+                <for variable="j" start="k+1" end="9" direction="inc" step="1">
+                    <if expression="n==list[j] &amp;&amp; occurences[j]!=1000">
+                        <then>
+                            <assign variable="occurences[k]" expression="occurences[k]+1"/>
+                            <assign variable="occurences[j]" expression="1000"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <if expression="occurences[i]!=1000 &amp;&amp; occurences[i]%2!=0">
+                    <then>
+                        <output expression="list[i]" newline="True"/>
+                        <output expression="&quot;times&quot;" newline="True"/>
+                        <output expression="occurences[i]" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
