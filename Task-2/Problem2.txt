@@ -1,0 +1,21 @@
+This is the program that prints Nth fibonacci number (Nth fibonacci Number denoted as F(N),F(0)=0,F(1)=1,….)
+BEGIN 
+{
+	function F(N)
+    { 
+	DECLARE integers n1,n2,n3,I
+        initialize n1 to one
+        initialize n2 to one
+        initialize I to two
+        WHILE I is less than N 
+            subtract n2 from n1 and store it in n3 
+            initialize n1 to n2 
+            initialize n2 to n3 
+            decrement I to one
+        RETURN n3    
+    }	
+   	DECLARE integers N 
+	get input from the user for N
+	Send the N to the F function and print the C to user
+}
+END

@@ -1,0 +1,19 @@
+This program gives outputs ‘TRUE’ if a given number is divisible by 3 and ‘FALSE’ otherwise, without using the ‘%’  operator explicitly.
+BEGIN
+{
+	DECLARE integers N,div,quo,rem
+	get input from the user for N
+	initializeq to zero
+	initialize rem to N 
+	initialize div to three
+	WHILE rem greater than equal to div ,DO
+		subtract div from rem
+		increment quo to one
+	end WHILE
+	IF rem is equal to zero 
+		PRINT “TRUE”
+	ELSE 
+		PRINT “FALSE”
+	end IF
+}
+END
