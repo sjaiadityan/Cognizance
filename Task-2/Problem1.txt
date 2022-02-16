@@ -3,7 +3,7 @@ BEGIN
 {
 	DECLARE integers N,div,quo,rem
 	get input from the user for N
-	initializeq to zero
+	initialize quo to zero
 	initialize rem to N 
 	initialize div to three
 	WHILE rem greater than equal to div ,DO
