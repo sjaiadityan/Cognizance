@@ -16,6 +16,6 @@ BEGIN
     }	
    	DECLARE integers N 
 	get input from the user for N
-	Send the N to the F function and print the C to user
+	Send the N to the F function and print the n3 to user
 }
 END
