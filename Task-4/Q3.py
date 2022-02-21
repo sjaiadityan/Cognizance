@@ -18,7 +18,7 @@ if ch==1:
         print ("{:<8} {:<15} {:<4}".format( j[0], j[1],j[2]))
 elif ch==2:
     add(l)
-    j=l[1]
+    j=l[2]
     print ("{:<8} {:<15} {:<4}".format( j[0], j[1],j[2]))
 else:
     print("Invalid input, enter 1 or 2")
