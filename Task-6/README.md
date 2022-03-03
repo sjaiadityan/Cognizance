@@ -50,7 +50,3 @@ Check out our landing page (◠‿◠)
 Amrita Vishwa Vidyapeetham Chennai Campus
 
 ---
-
-<font face="Comic sans MS" size=" 5" color="D099E2">Presentation Video Link </font>
-
-[Click here]()
