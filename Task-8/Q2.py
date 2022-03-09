@@ -1,0 +1,11 @@
+import numpy as np
+a = input("enter the array elements using space : ")
+list1= a.split()
+l1 = list(map(int, list1))
+x = np.array(l1)
+b = input("enter the array elements using space : ")
+list2= b.split()
+l2 = list(map(int, list2))
+y = np.array(l2)
+array_equal = np.allclose(x,y)
+print(array_equal)
